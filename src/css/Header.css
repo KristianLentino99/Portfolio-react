@@ -1,0 +1,31 @@
+.header-menu-btn{
+    color: rgba(255, 255, 255, 0.85);
+    background: #31313a;
+    margin-bottom: 8px;
+    position: relative;
+    display: block;
+    height: 72px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    z-index: 2;
+}
+
+.App-header .header-menu-btn span, .App-header .header-menu-btn span:before, .App-header .header-menu-btn span:after {
+    background: rgba(255, 255, 255, 0.85) !important;
+}
+
+.App-header .header-menu-btn span:before, .App-header .header-menu-btn span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -7px;
+    width: 80%;
+    height: 100%;
+    background: #323232;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
