@@ -1,4 +1,5 @@
 import React from "react";
+import {ResumeComponent} from "./ResumeComponent";
 
 
 function CardAboutComponent(){
@@ -15,30 +16,18 @@ function CardAboutComponent(){
                         <div className="name">Experience</div>
                     </div>
                     <div className="resume-items">
-                        <div className="resume-item border-line-h active">
-                            <div className="date">2013 - Present</div>
-                            <div className="name">Art Director</div>
-                            <div className="company">Facebook Inc.</div>
-                            <p>
-                                Collaborate with creative and development teams on the execution of ideas.
-                            </p>
-                        </div>
-                        <div className="resume-item border-line-h">
-                            <div className="date">2011 - 2012</div>
-                            <div className="name">Front-end Developer</div>
-                            <div className="company">Google Inc.</div>
-                            <p>
-                                Monitored technical aspects of the front-end delivery for several projects.
-                            </p>
-                        </div>
-                        <div className="resume-item">
-                            <div className="date">2009 - 2010</div>
-                            <div className="name">Senior Developer</div>
-                            <div className="company">Abc Inc.</div>
-                            <p>
-                                Optimize website performance using latest technology.
-                            </p>
-                        </div>
+                        <ResumeComponent
+                            date={"2019 - PRESENT"}
+                            company={"Dieffetech"}
+                            role={"Full stack web developer"}
+                            description={"In Dieffetech mi occupo di coordinare il mio team, gestire le attività e sviluppare applicativi web-based vari, dai portali di formazione ai CRM , sistemi di fatturazione elettronica e molto altro."}
+                        />
+                        <ResumeComponent
+                            date={"2018 - 2019"}
+                            company={"Zucchetti"}
+                            role={"Developer"}
+                            description={"In Zucchetti ho lavorato con un framework proprietario ma lavorare qui mi ha permesso di osservare l'organizzazione delle grandi aziende, oltre ad avermi dato un'ottima infarinatura di SQL"}
+                        />
                     </div>
                 </div>
                 <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
@@ -47,30 +36,20 @@ function CardAboutComponent(){
                         <div className="name">Education</div>
                     </div>
                     <div className="resume-items">
-                        <div className="resume-item border-line-h">
-                            <div className="date">2006 - 2008</div>
-                            <div className="name">Art University</div>
-                            <div className="company">New York</div>
-                            <p>
-                                Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri
-                            </p>
-                        </div>
-                        <div className="resume-item border-line-h">
-                            <div className="date">2005 - 2006</div>
-                            <div className="name">Programming Course</div>
-                            <div className="company">Paris</div>
-                            <p>
-                                Coursework - Git, WordPress, Javascript, iOS, Android.
-                            </p>
-                        </div>
-                        <div className="resume-item">
-                            <div className="date">2004 - 2005</div>
-                            <div className="name">Web Design Course</div>
-                            <div className="company">London</div>
-                            <p>
-                                Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript
-                            </p>
-                        </div>
+                        <ResumeComponent
+                            date={"2019"}
+                            company={"React Native"}
+                            role={"Presso ESIS Srl"}
+                            description={"Ho intrapreso un corso base della durata di 3 giorni su React Native"}
+                        />
+
+                        <ResumeComponent
+                            date={"2018"}
+                            company={"Diploma scuola superiore"}
+                            role={"ITIS Cesaris"}
+                            description={"Mi sono diplomato nel 2018 dall'indirizzo di informatica con 86/100 presso l'istituto ITIS A. Cesaris a Casalpusterlengo"}
+                        />
+
                     </div>
                 </div>
             </div>

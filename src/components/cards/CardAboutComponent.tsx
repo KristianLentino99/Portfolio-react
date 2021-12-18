@@ -40,7 +40,7 @@ function CardAboutComponent(){
                             </li>
                             <li>
                                 <strong>
-                                    Address . . . . .
+                                    City . . . . .
                                 </strong> Chignolo Po
                             </li>
                         </ul>

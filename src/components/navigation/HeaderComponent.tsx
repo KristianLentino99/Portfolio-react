@@ -1,5 +1,6 @@
 import React, {ReactElement} from "react";
 import logo from "../../logo.svg";
+import {HeaderVoiceComponent} from "./HeaderVoiceComponent";
 
 interface HeaderProps {
     onVoiceClick:Function,
@@ -13,18 +14,18 @@ function HeaderComponent(props:HeaderProps){
 
             <div className="top-menu">
                 <ul>
-                    <li className={activeTab == 1 ? 'active' : ''}>
-                        <a onClick={() => onVoiceClick(1)}>
+                    <HeaderVoiceComponent index={1} onClick={onVoiceClick} active={activeTab === 1} text={"About"}>
+                        <React.Fragment>
                             <span className="icon ion-person"></span>
                             <span className="link">About</span>
-                        </a>
-                    </li>
-                    <li className={activeTab == 2 ? 'active' : ''}>
-                        <a onClick={() => onVoiceClick(2)}>
+                        </React.Fragment>
+                    </HeaderVoiceComponent>
+                    <HeaderVoiceComponent index={2} onClick={onVoiceClick} active={activeTab === 2} text={"Resume"}>
+                        <React.Fragment>
                             <span className="icon ion-android-list"></span>
                             <span className="link">Resume</span>
-                        </a>
-                    </li>
+                        </React.Fragment>
+                    </HeaderVoiceComponent>
                     <li>
                         <a href="#works-card">
                             <span className="icon ion-paintbrush"></span>

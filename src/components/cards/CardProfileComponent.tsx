@@ -1,5 +1,6 @@
 import React from "react";
 import SocialComponent from "../social/SocialComponent";
+import {TypingComponent} from "../auto_typing/TypingComponent";
 
 function CardProfileComponent(){
     return (
@@ -7,7 +8,11 @@ function CardProfileComponent(){
 
             <div className="profile">
 
-                <div className={"slide"} style={{backgroundImage: "./images/bg.jpg"}}></div>
+                <div className={"slide d-flex align-items-center justify-content-center"} style={{backgroundImage: "./images/bg.jpg"}}>
+                    <div>
+                        <TypingComponent text={"Hi, I'm Kristian Lentino"} />
+                    </div>
+                </div>
                 <div className="image">
                     <img src={"https://www.kristianlentino.it/admin/images/image-circle.png"} alt="Kristian Lentino" />
                 </div>

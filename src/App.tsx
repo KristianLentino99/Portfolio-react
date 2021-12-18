@@ -21,6 +21,7 @@ import CardComponent from "./components/cards/CardComponent";
 import CardResumeComponent from './components/cards/CardResumeComponent';
 
 function App() {
+
     //setto di default attiva la tab "about"
   const [activeTab,setActiveTab] = useState(1);
 
@@ -28,7 +29,7 @@ function App() {
     <CursorDivComponent className={"main-container page"}>
         <React.Fragment>
             <WaveComponent/>
-            <div className="container opened" style={{width:"40vw"}}>
+            <div className="container opened cards-container">
                 <HeaderComponent activeTab={activeTab} onVoiceClick={(tab:number) => setActiveTab(tab)}/>
                 <CardProfileComponent/>
                 <CardComponent className={activeTab == 1 ? 'card-active' : null}>
