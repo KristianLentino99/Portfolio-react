@@ -124,8 +124,9 @@
   );
 }
 .has-popup-image img{
-  height: 220px !important;
+  height: 30vh !important;
   border-radius: 25%;
+  object-fit: cover;
 }
 
 .box-item .image .info:before {
@@ -166,6 +167,15 @@
   }
   .content.about .info-list ul {
     margin: unset;
+  }
+}
+@media (max-width: 560px){
+  .header {
+    position: fixed !important;
+    top: unset !important;
+    bottom: 0px !important;
+    width: 100%;
+    height: 64px;
   }
 }
 /* FINE MEDIA QUERY */

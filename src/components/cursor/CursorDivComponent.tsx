@@ -1,4 +1,5 @@
-import React, {useState, MouseEvent, ReactChildren, ReactElement} from "react";
+import React, {useState, MouseEvent, ReactChildren, ReactElement, useEffect} from "react";
+import {MOBILE_WIDTH} from "../../constants/constants";
 
 interface CursorDivComponentProps {
     children: ReactElement;
@@ -11,17 +12,29 @@ function CursorDivComponent(props:CursorDivComponentProps) {
         left:0,
         top: 0
     });
+    const [pageWidth, setPageWidth] = useState<number>(window.innerWidth);
+    function handleWindowSizeChange() {
+        setPageWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
 
     function handleMouseMove(ev:MouseEvent<HTMLDivElement>) {
         setMousePosition({left: ev.pageX, top: ev.pageY});
     }
+
+    const isMobile = pageWidth <= MOBILE_WIDTH;
     return (
         <div
-           className={`App ${props.className}`}
-           onMouseMove={(ev) => handleMouseMove(ev)}
+            className={`App ${props.className}`}
+            onMouseMove={isMobile ? () => {} : (ev) => handleMouseMove(ev)}
         >
             <div
-                className={"cursor-follower"}
+                className={ !isMobile ? "cursor-follower" : 'mobile'}
                 style={{
                     left:mousePosition.left , top: mousePosition.top,
                     backgroundColor:"var(--primary-color)",

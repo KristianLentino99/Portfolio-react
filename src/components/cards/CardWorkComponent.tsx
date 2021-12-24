@@ -18,8 +18,6 @@ function CardWorkComponent(){
         <div className="card-wrap">
 
             <div className="content works">
-
-
                 <div className={"title font-large d-flex"}>
                     Works
                 </div>
