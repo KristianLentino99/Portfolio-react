@@ -27,7 +27,9 @@
   -webkit-border-radius: 50%;
   -khtml-border-radius: 50%;
 }
-
+.cards-container{
+  z-index: 3;
+}
 .main-container{
   padding: 4rem;
 }
@@ -65,7 +67,18 @@
   width: 30vw;
   position: fixed;
   transform:rotate(20deg);
+  z-index: 2;
   top: -18rem;
+  right: 0px;
+  transition: width 1s;
+  transition-timing-function: ease-out;
+}
+.wave-black{
+  width: 30vw;
+  position: fixed;
+  transform:rotate(20deg);
+  top: -10rem;
+  z-index: 1;
   right: 0px;
   transition: width 1s;
   transition-timing-function: ease-out;
