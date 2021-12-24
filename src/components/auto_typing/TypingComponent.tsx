@@ -1,9 +1,10 @@
 import React, {FunctionComponent, useEffect, useState} from "react";
 interface TypingComponentProps {
     text: string,
-    speed?: number
+    speed?: number,
+    shouldLoop?: boolean
 }
-export const TypingComponent:FunctionComponent<TypingComponentProps>  = ({text,speed}) => {
+export const TypingComponent:FunctionComponent<TypingComponentProps>  = ({text,speed,shouldLoop}) => {
 
     const [activeText,setActiveText] = useState("");
     const [isDeleting,setIsDeleting] = useState(false);
@@ -16,7 +17,7 @@ export const TypingComponent:FunctionComponent<TypingComponentProps>  = ({text,s
         );
 
         //se ha raggiunto il 100% del testo setto che deve eliminare ora
-        if (!isDeleting && activeText === fullText) {
+        if (!isDeleting && activeText === fullText && shouldLoop) {
 
             setTimeout(() => setIsDeleting(true), 500);
 
@@ -38,5 +39,6 @@ export const TypingComponent:FunctionComponent<TypingComponentProps>  = ({text,s
     );
 };
 TypingComponent.defaultProps ={
-    speed: 160
+    speed: 160,
+    shouldLoop: false
 }

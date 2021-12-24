@@ -26,24 +26,12 @@ function HeaderComponent(props:HeaderProps){
                             <span className="link">Resume</span>
                         </React.Fragment>
                     </HeaderVoiceComponent>
-                    <li>
-                        <a href="#works-card">
+                    <HeaderVoiceComponent index={3} onClick={onVoiceClick} active={activeTab === 3} text={"Resume"}>
+                        <React.Fragment>
                             <span className="icon ion-paintbrush"></span>
                             <span className="link">Works</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#blog-card">
-                            <span className="icon ion-chatbox-working"></span>
-                            <span className="link">Blog</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contacts-card">
-                            <span className="icon ion-at"></span>
-                            <span className="link">Contact</span>
-                        </a>
-                    </li>
+                        </React.Fragment>
+                    </HeaderVoiceComponent>
                 </ul>
             </div>
 

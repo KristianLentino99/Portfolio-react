@@ -2,6 +2,11 @@
   --primary-color: #ff9800;
   --rgba-primary-color: rgba(255, 152, 0, 0.4) 0%;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(../fonts/Poppins-Black.ttf) format('truetype');
+}
 .App {
   text-align: center;
   background-color: #26262d !important;
@@ -37,8 +42,6 @@
   align-content: center;
   margin: 2rem;
 }
-
-
 .text-primary{
   color: var(--primary-color);
 }
@@ -62,7 +65,7 @@
   width: 30vw;
   position: fixed;
   transform:rotate(20deg);
-  top: -15rem;
+  top: -18rem;
   right: 0px;
   transition: width 1s;
   transition-timing-function: ease-out;
@@ -72,38 +75,18 @@
   transition: width 2s;
   transition-timing-function: ease-out;
 }
-.card-active{
-  width: 100%;
+.collapse-card{
+  transition: display 2s;
+  transition-timing-function: ease-out;
 }
 .wave:hover{
   width: 100vw;
-}
-.cards-container{
-  width: 40vw;
 }
 
 .page{
   justify-content: flex-start;
 }
 
-@media (max-width: 800px) {
-  .cards-container{
-    width: 100%;
-  }
-  .wave{
-    top: -10rem !important;
-  }
-  .main-container{
-    padding: 1rem;
-  }
-  .d-fade{
-    width: 0px;
-    margin: 0px;
-    padding: 0px;
-    height: 0px;
-  }
-
-}
 
 #cursor {
   border-left: .1em solid var(--primary-color);
@@ -122,8 +105,67 @@
 .justify-content-center{
   justify-content: center;
 }
-
-@font-face {
-  font-family: 'Poppins';
-  src: local('Poppins'), url(../fonts/Poppins-Black.ttf) format('truetype');
+.card-started .profile .slide {
+  height: 40%;
 }
+
+.card-active{
+  width: 60%;
+}
+.d-none{
+  display: none;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.content .title:before {
+  background: linear-gradient(
+          135deg, var(--rgba-primary-color) 0%, var(--rgba-primary-color) 100%
+  );
+}
+.has-popup-image img{
+  height: 220px !important;
+  border-radius: 25%;
+}
+
+.box-item .image .info:before {
+  background: linear-gradient(135deg, var(--rgba-primary-color) 0%, var(--rgba-primary-color) 100%);
+  border-radius: 15%;
+}
+.card-inner:before, .card-inner:after {
+  height: 20px;
+}
+/* INIZIO MEDIA QUERY */
+@media (max-width: 800px) {
+
+  .cards-container{
+    width: 100%;
+  }
+  .wave{
+    top: -10rem !important;
+  }
+  .main-container{
+    padding: 1rem;
+  }
+  .d-fade{
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+  }
+
+
+}
+@media (max-width: 1199px){
+
+  .card-active{
+    width: 100%;
+  }
+  .container {
+    padding: 0px;
+  }
+  .content.about .info-list ul {
+    margin: unset;
+  }
+}
+/* FINE MEDIA QUERY */

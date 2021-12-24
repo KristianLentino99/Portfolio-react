@@ -8,9 +8,8 @@ interface HeaderVoiceComponentProps{
     children: ReactElement
 }
 export const HeaderVoiceComponent:FunctionComponent<HeaderVoiceComponentProps> = ({index,children,active,text,onClick}) => {
-    console.log(active);
     return (
-        <li className={active ? 'active' : ''}>
+        <li className={ `cursor-pointer ${active ? 'active ' : ''}`}>
             <a onClick={() => onClick(index)}>
                 {children}
             </a>

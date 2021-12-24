@@ -19,12 +19,16 @@ import CardProfileComponent from "./components/cards/CardProfileComponent";
 import WaveComponent from "./components/wave/WaveComponent";
 import CardComponent from "./components/cards/CardComponent";
 import CardResumeComponent from './components/cards/CardResumeComponent';
+import CardWorkComponent from "./components/cards/CardWorkComponent";
 
 function App() {
 
     //setto di default attiva la tab "about"
   const [activeTab,setActiveTab] = useState(1);
 
+  useEffect(() => {
+      document.title = "Kristian Lentino's Portfolio";
+  })
   return (
     <CursorDivComponent className={"main-container page"}>
         <React.Fragment>
@@ -32,11 +36,14 @@ function App() {
             <div className="container opened cards-container">
                 <HeaderComponent activeTab={activeTab} onVoiceClick={(tab:number) => setActiveTab(tab)}/>
                 <CardProfileComponent/>
-                <CardComponent className={activeTab == 1 ? 'card-active' : null}>
+                <CardComponent className={activeTab == 1 ? 'card-active' : 'd-none'}>
                     <CardAboutComponent />
                 </CardComponent>
-                <CardComponent className={activeTab == 2 ? 'card-active' : null}>
+                <CardComponent className={activeTab == 2 ? 'card-active' : 'd-none'}>
                     <CardResumeComponent />
+                </CardComponent>
+                <CardComponent className={activeTab == 3 ? 'card-active' : 'd-none'}>
+                    <CardWorkComponent />
                 </CardComponent>
             </div>
         </React.Fragment>

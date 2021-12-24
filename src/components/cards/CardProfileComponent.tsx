@@ -1,6 +1,7 @@
 import React from "react";
 import SocialComponent from "../social/SocialComponent";
 import {TypingComponent} from "../auto_typing/TypingComponent";
+import {CV_URL,CONTACT_EMAIL} from "../../constants/constants";
 
 function CardProfileComponent(){
     return (
@@ -25,12 +26,12 @@ function CardProfileComponent(){
                 </div>
                 <SocialComponent/>
                 <div className={"lnks"}>
-                    <a href="#" className={"lnk"}>
+                    <a href={CV_URL} target={'_blank'} className={"lnk"}>
                         <span className={"text"}>
                             Download CV
                         </span>
                     </a>
-                    <a href="mailto:lentino_kristian@libero.it" className={"lnk discover"}>
+                    <a href={`mailto:${CONTACT_EMAIL}`} className={"lnk discover"}>
                         <span className={"text"}>
                             Contact Me
                         </span>
