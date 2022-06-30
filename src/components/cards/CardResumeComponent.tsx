@@ -17,16 +17,22 @@ function CardAboutComponent(){
                     </div>
                     <div className="resume-items">
                         <ResumeComponent
-                            date={"2019 - PRESENT"}
+                            date={"2022 - Presente"}
+                            company={"Moneyfarm"}
+                            role={"Software Engineer - Backend"}
+                            description={"At Moneyfarm I am in charge of improving and implementing new features for our services, with the aim of delivering the best possible experience to our users and improving our product."}
+                        />
+                        <ResumeComponent
+                            date={"2019 - 2022"}
                             company={"Dieffetech"}
                             role={"Full stack web developer"}
-                            description={"In Dieffetech mi occupo di coordinare il mio team, gestire le attività e sviluppare applicativi web-based vari, dai portali di formazione ai CRM , sistemi di fatturazione elettronica e molto altro."}
+                            description={"At Dieffetech, I was responsible for coordinating my team, managing activities and developing various web-based applications, from training portals to CRMs, electronic invoicing systems and much more."}
                         />
                         <ResumeComponent
                             date={"2018 - 2019"}
                             company={"Zucchetti"}
                             role={"Developer"}
-                            description={"In Zucchetti ho lavorato con un framework proprietario ma lavorare qui mi ha permesso di osservare l'organizzazione delle grandi aziende, oltre ad avermi dato un'ottima infarinatura di SQL"}
+                            description={"At Zucchetti I worked with a proprietary framework but working here allowed me to observe the organisation of large companies, as well as giving me a solid base of SQL"}
                         />
                     </div>
                 </div>
@@ -39,15 +45,15 @@ function CardAboutComponent(){
                         <ResumeComponent
                             date={"2019"}
                             company={"React Native"}
-                            role={"Presso ESIS Srl"}
-                            description={"Ho intrapreso un corso base della durata di 3 giorni su React Native"}
+                            role={"ESIS Srl"}
+                            description={"I undertook a 3-day basic course on React Native"}
                         />
 
                         <ResumeComponent
                             date={"2018"}
-                            company={"Diploma scuola superiore"}
+                            company={"high school diploma"}
                             role={"ITIS Cesaris"}
-                            description={"Mi sono diplomato nel 2018 dall'indirizzo di informatica con 86/100 presso l'istituto ITIS A. Cesaris a Casalpusterlengo"}
+                            description={"I graduated in 2018 from the ITIS A. Cesaris institute in Casalpusterlengo with an 86/100 in computer science."}
                         />
 
                     </div>

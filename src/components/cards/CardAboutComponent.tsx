@@ -2,6 +2,8 @@ import React from "react";
 
 
 function CardAboutComponent(){
+    let currentYear = new Date().getFullYear()
+    let years = (currentYear - 1999).toFixed(0); 
     return (
         <React.Fragment>
             <div className={"title font-large d-flex"}>
@@ -12,12 +14,15 @@ function CardAboutComponent(){
                 <div className={"col col-d-12 col-t-12 col-m-12 border-line-v"}>
                     <div className={"text-box col col-d-12 mb-1"}>
                         <p className={"text-white"}>
-                            Ciao, Mi chiamo Kristian e ho 22 anni .<br/>
-                            Subito dopo il diploma ho avuto modo di entrare in Zucchetti e apprendere come funziona il mondo del lavoro e sopratutto il flusso di lavoro in grandi aziende molto strutturate. <br/>
-                            Attualmente in Dieffetech mi occupo di coordinare il mio team, gestire le attività e sviluppare applicativi web-based vari, dai portali di formazione ai CRM , sistemi di fatturazione elettronica e molto altro.
-                            Nel tempo libero mi sono occupato anche di sviluppare siti vetrina per clienti di un videomaker . <br/>
-                            Nel mio lavoro cerco sempre di stare attento ai piccoli dettagli e alle performance degli applicativi che sviluppo con particolare attenzione al lato frontend dei miei applicativi come ad esempio SEO e Web core vitals .
-                            Amo investire il mio tempo libero nell’approfondire il mondo della programmazione , con particolare focus e attenzione ai vari design patterns, Node js e React.
+                            <h2>Ciao!</h2>
+                            My name is Kristian and I am {years} years old . <br/>
+                            Immediately after graduating I had the opportunity to join Zucchetti and learn how the business world works,
+                            especially the workflow in large, highly structured companies. <br/>
+                            Later at Dieffetech I was involved in developing web-based applications of all kinds, from training portals to CRMs, electronic invoicing systems and much more.
+                            In my spare time I also occasionally worked on developing showcase sites. <br/>
+                            In my work I always try to pay attention to the small details and performance of the applications I develop, with particular attention to the frontend side of my applications such as SEO and Web core vitals.
+                            I currently hold the position of Software Engineer at Moneyfarm where I deal with Backend developments in Scala. <br/>
+                            Even if I currently work as Backend ,I love to invest my free time in delving into the world of programming, with particular focus on design patterns, Node js and React.
                         </p>
                     </div>
                     <div className={"info-list"}>
@@ -25,7 +30,7 @@ function CardAboutComponent(){
                             <li>
                                 <strong>
                                     Age . . . . .
-                                </strong> 22
+                                </strong> {years}
                             </li>
                             <li>
                                 <strong>
@@ -36,7 +41,7 @@ function CardAboutComponent(){
                             <li>
                                 <strong>
                                     Residence . . . . .
-                                </strong> Italia
+                                </strong> Italy
                             </li>
                             <li>
                                 <strong>

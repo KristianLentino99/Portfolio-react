@@ -7,7 +7,7 @@ function CardWorkComponent(){
     let worksCards = works.map((item) => {
         return (
             <SingleWorkComponent
-                image={item.image}
+                //image={item.image}
                 project_title={item.project_title}
                 project_category={item.project_category}
                 project_url={item.project_url}
@@ -30,7 +30,7 @@ function CardWorkComponent(){
                 </div>
 
             </div>
-
+            <p className="text-white">... And many other!!</p>
         </div>
     );
 

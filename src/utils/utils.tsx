@@ -46,5 +46,23 @@ export const getWorks = () => {
         })
     );
 
+    works.push(
+        new WorkModel({
+            image: '#',
+            project_title: "EACondominio",
+            project_url: "https://eacondominio.com/",
+            project_category: "App to deal with condominium meetings virtually"
+        })
+    );
+
+    works.push(
+        new WorkModel({
+            image: '#',
+            project_title: "Samsara Hair&Beauty",
+            project_url: "https://samsarahairandbeauty.it/",
+            project_category: "showcase site of a beauty centre "
+        })
+    );
+
     return works;
 }
