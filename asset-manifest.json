@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-react/static/css/main.7e27290d.css",
-    "main.js": "/Portfolio-react/static/js/main.08b4739a.js",
+    "main.css": "/Portfolio-react/static/css/main.68ece0fb.css",
+    "main.js": "/Portfolio-react/static/js/main.f6bb15fa.js",
     "static/js/787.9b9c0edf.chunk.js": "/Portfolio-react/static/js/787.9b9c0edf.chunk.js",
     "static/media/ionicons.svg?v=2.0.1": "/Portfolio-react/static/media/ionicons.b45d332f6829d6813600.svg",
     "static/media/ionicons.ttf?v=2.0.1": "/Portfolio-react/static/media/ionicons.1fa6a1e8581aaedf7344.ttf",
@@ -11,12 +11,12 @@
     "static/media/quote.svg": "/Portfolio-react/static/media/quote.2db1fef9c9a65bfa3285.svg",
     "static/media/quote_d.svg": "/Portfolio-react/static/media/quote_d.0122f33eea45c0f6d246.svg",
     "index.html": "/Portfolio-react/index.html",
-    "main.7e27290d.css.map": "/Portfolio-react/static/css/main.7e27290d.css.map",
-    "main.08b4739a.js.map": "/Portfolio-react/static/js/main.08b4739a.js.map",
+    "main.68ece0fb.css.map": "/Portfolio-react/static/css/main.68ece0fb.css.map",
+    "main.f6bb15fa.js.map": "/Portfolio-react/static/js/main.f6bb15fa.js.map",
     "787.9b9c0edf.chunk.js.map": "/Portfolio-react/static/js/787.9b9c0edf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e27290d.css",
-    "static/js/main.08b4739a.js"
+    "static/css/main.68ece0fb.css",
+    "static/js/main.f6bb15fa.js"
   ]
 }
